@@ -4,7 +4,8 @@ def show_menu():
     print("1. Add a mark")
     print("2. Show statistics")
     print("3. Search for a mark")
-    print("4. Exit")
+    print("4. Show marks above average")
+    print("5. Exit")
 
 
 # Validate marks
@@ -75,12 +76,34 @@ def search_mark(marks):
         print("Not found.")
 
 
+# Show marks above average
+def show_above_average(marks):
+    if len(marks) == 0:
+        print("No marks yet.")
+        return
+
+    average = average_of(marks)
+    found = False
+
+    print()
+    print("===== MARKS ABOVE AVERAGE =====")
+    print("Class average:", round(average, 1))
+
+    for i in range(len(marks)):
+        if marks[i] > average:
+            print("Learner", i + 1, ":", marks[i])
+            found = True
+
+    if not found:
+        print("No marks above average.")
+
+
 # Main program
 def main():
     marks = []
     choice = ""
 
-    while choice != "4":
+    while choice != "5":
         show_menu()
         choice = input("Choice: ")
 
@@ -94,10 +117,14 @@ def main():
             search_mark(marks)
 
         elif choice == "4":
+            show_above_average(marks)
+
+        elif choice == "5":
             print("Goodbye.")
 
         else:
-            print("Invalid choice. Enter 1, 2, 3 or 4.")
+            print("Invalid choice. Enter 1, 2, 3, 4 or 5.")
 
 
+# Start program
 main()
