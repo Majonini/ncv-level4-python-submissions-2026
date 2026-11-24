@@ -1,0 +1,1 @@
+Let learners first understand total_of(), average_of() and highest_of(). Then introduce bubble sort, median and mode as additional programming challenges. This builds naturally from loops, lists, functions and dictionaries.
