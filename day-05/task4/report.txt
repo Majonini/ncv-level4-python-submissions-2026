@@ -1,0 +1,4 @@
+Rank  Number    Name          Average
+1     2024003   Lerato          65.7
+2     2024001   Thandi          65.0
+3     2024002   Sipho           64.3

@@ -1,0 +1,4 @@
+line 4: bad student number: 2024X04,Dumisani,70
+line 5: missing name: 2024005,,60;61
+line 6: mark is not a number: 2024006,Naledi,45;abc;50
+line 7: mark above 100: 2024007,Kabelo,101
